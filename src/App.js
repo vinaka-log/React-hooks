@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import Basic1 from './components/Basic1.js';
+import Basic2 from './components/Basic2.js';
 import './App.css';
 
 function App() {
@@ -8,8 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Basic1 name="Hooks"/>
-        <Basic1 name="vinaka"/>
+        <Basic2 />
       </header>
     </div>
   );

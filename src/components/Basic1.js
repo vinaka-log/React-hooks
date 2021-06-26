@@ -1,14 +1,22 @@
 import React, {useState} from 'react'
 
-const Basic1 = (props) => {
+const Basic1 = () => {
 //     const clickHandler =() => {
 //         console.log('clicked')
 //     }
-const [count, setCount] = useState(0)
+const [product, setProducts] = useState({name:'', price: ''})
     return (
         <>
-        <button onClick={() => {setCount(preCount=>preCount + 1);setCount(preCount => preCount + 1);}}>Count {count}</button>
-        <h1>Hello { props.name }</h1>
+        <form>
+            <input type='text' value={product.name}
+            // 要素の分解と入力中の値に変更
+            onChange={evt => setProducts({...product, name:evt.target.value})}/>
+            <input type='text' value={product.price}
+            // 要素の分解と入力中の値に変更
+            onChange={evt => setProducts({...product, price:evt.target.value})}/>
+        </form>
+        <h1>Product name is {product.name}</h1>
+        <h1>Product name is {product.price}</h1>
         <h1>Hello React2</h1>
         </>
     )

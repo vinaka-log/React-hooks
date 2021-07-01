@@ -9,4 +9,4 @@ const CountDisplay = ({name, count}) => {
     )
 }
 
-export default CountDisplay
+export default React.memo(CountDisplay)

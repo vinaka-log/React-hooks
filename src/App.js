@@ -42,7 +42,7 @@ function App() {
           {/* <BasicReducer /> */}
           {/* Count {count}
           <CompB /> */}
-          <Memo />
+          {/* <Memo /> */}
 
         </header>
       </div>

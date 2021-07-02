@@ -16,13 +16,13 @@ const reducer = (currentState, action) => {
 }
 
 const BasicReducer = () => {
-    const [count, dispatch] = useReducer(reducer, initialState)
+    const [Count, dispatch] = useReducer(reducer, initialState)
     return (
         <div>
             <div>Count {count}</div>
             <button onClick={()=>dispatch('add_1')}>Add + 1</button>
-            <button onClick={()=>dispatch('multiple_3')}>Multiple * 3</button>
-            <button onClick={()=>dispatch('reset')}>Reset</button>
+            <button onClick={()=>dispatch('multiple_3')}>Multiple_3</button>
+            <button onClick={()=>dispatch('reset')}></button>
         </div>
     )
 }
